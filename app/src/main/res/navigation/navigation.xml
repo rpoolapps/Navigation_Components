@@ -65,5 +65,14 @@
         android:id="@+id/fifthFragment"
         android:name="com.ravisingh.navigationComponents.fragments.FifthFragment"
         android:label="fragment_fifth"
-        tools:layout="@layout/fragment_fifth" />
+        tools:layout="@layout/fragment_fifth" >
+        <action
+            android:id="@+id/action_fifthFragment_to_bottomSheetFragment"
+            app:destination="@id/bottomSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetFragment"
+        android:name="com.ravisingh.navigationComponents.fragments.BottomSheetFragment"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
 </navigation>
