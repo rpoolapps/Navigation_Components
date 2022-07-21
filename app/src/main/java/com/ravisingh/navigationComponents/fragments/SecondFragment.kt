@@ -13,7 +13,7 @@ import com.ravisingh.navigationComponents.R
 
 class SecondFragment : Fragment() {
 
-    val args : SecondFragmentArgs by navArgs()
+    val args: SecondFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,13 +24,16 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val views  = inflater.inflate(R.layout.fragment_second, container, false)
+        val views = inflater.inflate(R.layout.fragment_second, container, false)
         // val data = requireArguments()["data"] as SendMyData  // Receive data directly from bundle without using safe args
+        val textView = views.findViewById<TextView>(R.id.textview)
 
 
         val data = args.myData
-        val textView = views.findViewById<TextView>(R.id.textview)
-        textView.text = "${data!!.firstName} ${data.secondName} ${data.lastname}"
+
+        if (data != null) {
+            textView.text = "${data.firstName} ${data.secondName} ${data.lastname}"
+        }
 
         return views
     }

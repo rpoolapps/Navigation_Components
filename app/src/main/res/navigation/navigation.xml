@@ -20,6 +20,15 @@
             app:argType="com.ravisingh.navigationComponents.model.SendMyData[]"
             app:nullable="true"
             android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_firstFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_fifthFragment"
+            app:destination="@id/fifthFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment2"
+            app:destination="@id/thirdFragment" />
 
     </fragment>
     <fragment
@@ -42,4 +51,19 @@
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.ravisingh.navigationComponents.fragments.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.ravisingh.navigationComponents.fragments.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" />
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.ravisingh.navigationComponents.fragments.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" />
 </navigation>
