@@ -7,6 +7,7 @@
     tools:context=".fragments.BottomSheetFragment">
 
     <TextView
+        android:id="@+id/list_item1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/icon_one"
@@ -14,6 +15,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/list_item2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/icon_two"
@@ -21,6 +23,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/list_item3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/icon_three"
@@ -28,6 +31,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/list_item4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/icon_four"
@@ -35,6 +39,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/list_item5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/icon_five"
